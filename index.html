@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de recensement</title>
+  </head>
+  <body>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 d-flex justify-content-center pb-3"><h5>Jeemacoder gestion utilisateurs</h5></div>
+            <div class="col-md-8 pb-5">
+                <form class="row g-3 border p-3  shadow-lg" id="form-info">
+                    <div class="col-md-6">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="prenom">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Téléphone</label>
+                        <input type="phone" class="form-control" id="phone">
+                    </div>
+                    <div class="col-md-12" id="boutton">
+                      <button type="submit" class="btn btn-success w-100">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 pb-3">
+                <hr>
+                <h5 class="text-center">Utilisateurs</h5>
+            </div>
+            <div class="table table-responsive border p-2 border-bottom-100">
+                <div class="infos d-flex justify-content-around flex-nowrap">
+                  <div class="col">
+                    <h6 class="fw-bold">Prénom</h6>
+                  </div>
+                  <div class="col">
+                    <h6 class="fw-bold">Nom</h6>
+                  </div>
+                  <div class="col">
+                    <h6 class="fw-bold">Email</h6>
+                  </div>
+                  <div class="col">
+                    <h6 class="fw-bold">Téléphone</h6>
+                  </div>
+                  <div class="col text-center">
+                    <h6 class="fw-bold">Actions</h6>
+                  </div>
+                </div>
+                <div class="w-100" id="users"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

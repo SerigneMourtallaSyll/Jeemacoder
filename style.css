@@ -1,0 +1,46 @@
+
+@media screen and (min-width:100px) and (max-width:330px){
+    .infos{
+        width: 1000px;
+    }
+
+    #users .carte {
+        width: 1000px;
+    }
+
+    #users .col{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:340px) and (max-width:480px){
+    .infos{
+        width: 1000px;
+    }
+
+    #users .carte {
+        width: 1000px;
+    }
+
+    #users .col{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:480px) and (max-width:780px){
+
+    .infos{
+        width: 1000px;
+    }
+
+    #users .carte {
+        width: 1000px;
+    }
+
+    #users .col{
+        width: 100%;
+    }
+}
